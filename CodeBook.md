@@ -23,12 +23,16 @@ The unziped file creates the following folder and file strucure
 - 'train/y_train.txt': Training labels.	
 - 'test/X_test.txt': Test set.
 - 'test/y_test.txt': Test labels.
+- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+- 'testn/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
 
-2) Data description
-The mean and standard deviation for each measurement are stored in the columns containing the phrase 'mean()' or 'std()'  
+2) Data description:
+The feature data are saved in the source files 'train/X_train.txt' and 'test/X_test.txt'
+The associated activities are recorded in the files 'train/y_train.txt' and 'test/y_test.txt'. The activities can be merges directly to the feature data since they are in same order. If any of those 4 files are ordered before they are merged the activity WILL NOT be joined to the correct feature observation.
+The files train/subject_train.txt and test/subject_test.txt or also arranged in the same order as 'train/X_train.txt' and 'test/X_test.txt' and the same causion must be taken as with the 'train/y_train.txt' and 'test/y_test.txt' files.
 
-3) Transform of Data
+3) Transform of Data:
 It is assumed that the original source dataset is unzipped into the folder 'C:\Coursera\Getting and Cleaning Data\Course Project\Data'
 The R code used for the transformation of the data is in the README.md file
 
@@ -72,7 +76,7 @@ The R code used for the transformation of the data is in the README.md file
   - Create TidyData set and order it by SubjectId and ActivityLabel
   - Write TidyData to text file TidyData.txt
 
-4) Variable description
+4) Variable description:
 All variables in the soruce files 'train/X_train.txt' and 'test/X_test.txt'  have a numeric format
   
 1 tBodyAcc-mean()-X
