@@ -1,9 +1,4 @@
----
-title: "CodeBook"
-author: "Kenneth Ylänen"
-date: "27. dec. 2015"
-output: html_document
----
+# CodeBook
 
 This is the code book for the Getting and Cleaning Data course project (ID: getdata-035) under the Data Scientist specialization at John Hopkins University. The cook book contains 5 parts: 0) System 1) Introduction 2) Data description 3) Transform of Data and 4) Variable description.
 
