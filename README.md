@@ -12,3 +12,5 @@ It assumes that the working directory is C:/Coursera/Getting and Cleaning Data/C
 
 The outcome of the R script is the text file TidyData.txt which is attached to the cource project.
 This data set is tidy because each variable is saved in it own column and each observation is saved in its own row.
+
+For more information please read the CookBook.md file
